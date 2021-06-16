@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/config.js"></script>
+    <script defer  src="/app.js"></script>
+    <title>Recipe</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-yellow-50">
+    <!-- wrapper -->
+    <div class="mt-6 px-4 container mx-auto">
+      <div class="md:justify-between md:items-center">
+        <div class="flex items-center justify-between">
+          <a href="index.html"
+            ><img
+              class="w-18 rounded-2xl"
+              src="/ic_outline-food-bank.png"
+              alt="logo"
+          /></a>
+          <div>
+            <a href="mailto:milijan.popovic@gmail.com">
+              <img class="w-10 rounded-2xl" src="/contact.jpeg" alt="Contact me">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ----- -->
+
+      <!-- main section -->
+      <div
+        class="text-center text-2xl font-medium py-8 text-opacity-60 items-center justify-around mt-10"
+      >
+        <h1>
+          <span class="text-6xl font-bold text-red-900 p-4">ENJOY</span
+          ><br /><span class="text-4xl text-gray-700">your</span><br /><span
+            class="text-8xl font-bold text-red-900 tracking-widest"
+            >MEAL</span
+          >
+        </h1>
+        <div class="flex items-center justify-center mt-16 mb-8">
+          <input
+            class="outline-none rounded-xl border-2 relative text-xl py-2 px-4 w-80 shadow-xl"
+            type="text"
+            placeholder="Search for recipe..."
+            name="search"
+            id="search-input"
+            autofocus
+            required
+          />
+          <svg
+            class="ml-32 absolute w-8 transform rotate-90 cursor-pointer"
+            id="search-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+      </div>
+
+        <div class=" max-w-screen meal flex flex-wrap justify-center gap-20">
+          <!-- card template -->
+        </div>      
+    </div>
+
+    <footer
+      class="border-t p-2 text-xl fixed text-gray-700 bottom-0 w-full text-center bg-yellow-100"
+    >
+      <span class="text-center"
+        >Crafted with ♥️ by
+        <a
+          class="text-red-900"
+          href="https://github.com/minime89-maker"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Minja</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
